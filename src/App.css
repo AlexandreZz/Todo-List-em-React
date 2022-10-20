@@ -1,0 +1,192 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body,
+html {
+  background-color: rgb(235, 235, 235);
+  height: 100%;
+}
+
+.flex {
+  display: flex;
+}
+
+.container {
+  width: 400px;
+  margin: 0 auto;
+}
+
+.titulo {
+  padding: 20px 20px 20px 0;
+  text-align: left;
+  color: #333;
+}
+
+.AddItem {
+  display: block;
+  width: 90px;
+  height: 40px;
+  border: 1px solid #fb1;
+  font-size: 14px;
+  margin: 10px auto;
+  border-radius: 4px;
+  background-color: #fb1;
+  color: #333;
+  transition: 0.4s;
+  cursor: pointer;
+}
+
+.AddItem:hover,
+.AddItem:focus {
+  outline: none;
+  box-shadow: 0px 0px 0px 1px #fea, 0px 0px 0px 2px #fb1;
+}
+
+.important {
+  width: 47%;
+  display: block;
+  margin: 30px auto 0 auto;
+  text-align: center;
+  padding: 10px;
+  background-color: white;
+  border-radius: 8px;
+}
+
+.listItem,
+.important {
+  width: 47%;
+  display: block;
+  margin: 30px auto 0 auto;
+  text-align: center;
+  padding: 10px;
+  background-color: white;
+  border-radius: 8px;
+}
+
+.listItem ul,
+.important ul {
+  list-style-position: inside;
+}
+
+.listItem ul li,
+.important ul li {
+  padding: 35px 8px;
+  position: relative;
+  list-style-type: none;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #333;
+  font-size: 15px;
+  font-weight: bold;
+  word-break: break-all;
+}
+
+.important ul li {
+  padding: 15px 8px !important;
+}
+
+.listItem ul li p,
+.important ul li p {
+  width: 235px;
+}
+
+.delet {
+  width: 65px;
+  height: 35px;
+  border: 1px solid #ff9284;
+  background-color: #f8d0ce;
+  border-radius: 4px;
+  margin: 0 20px;
+  cursor: pointer;
+  transition: 0.4s;
+  position: absolute;
+  top: 7px;
+  right: -14px;
+}
+
+.delet:hover,
+.delet:focus {
+  outline: none;
+  box-shadow: 0px 0px 0px 2px #ff9284, 0px 0px 0px 3px #f8d0f8;
+}
+
+.trash {
+  width: 18px;
+  position: absolute;
+  top: 11px;
+  right: 27px;
+  z-index: 1;
+  cursor: pointer;
+}
+
+.listTd {
+  width: auto;
+  height: auto;
+  padding: 10px 0;
+  margin: 5px 0;
+  border: 1px solid #fb1;
+  border-radius: 5px;
+  transition: 0.5s;
+}
+
+.listTd:hover,
+.listTd:focus {
+  outline: none;
+  box-shadow: 0px 0px 0px 1px #fea, 0px 0px 0px 2px #fb1;
+}
+
+.listImport {
+  border: 1px solid #adf7b1;
+}
+
+.listImport:hover,
+.listImport:focus {
+  outline: none;
+  box-shadow: 0px 0px 0px 2px #adf7b1, 0px 0px 0px 3px #cef8e7;
+}
+
+.importantItem {
+  width: 65px;
+  height: 35px;
+  border: 1px solid #adf7b1;
+  background-color: #cef8e7;
+  border-radius: 4px;
+  margin: 0 20px;
+  cursor: pointer;
+  transition: 0.4s;
+  position: absolute;
+  top: 50px;
+  right: -14px;
+}
+
+.importantItem:hover,
+.importantItem:focus {
+  outline: none;
+  box-shadow: 0px 0px 0px 2px #adf7b1, 0px 0px 0px 3px #cef8e7;
+}
+
+.importantItem::after {
+  content: '';
+  display: block;
+  width: 7px;
+  height: 2px;
+  background-color: rgb(0, 0, 0);
+  position: absolute;
+  left: 40%;
+  transform: rotate(45deg);
+}
+
+.importantItem::before {
+  content: '';
+  display: block;
+  width: 17px;
+  height: 2px;
+  background-color: black;
+  position: absolute;
+  left: 45%;
+  top: 12px;
+  transform: rotate(130deg);
+}
